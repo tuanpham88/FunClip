@@ -1,0 +1,369 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: clesarmedia\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-05-04 22:07+0100\n"
+"PO-Revision-Date: Wed Jun 22 2016 09:19:02 GMT+0200 (CEST)\n"
+"Last-Translator: Michael <info@mhthemes.com>\n"
+"Language-Team: EightPixelDesign <pixeldesign94@gmail.com>\n"
+"Language: French (France)\n"
+"Plural-Forms: nplurals=2; plural=n > 1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Loco - https://localise.biz/\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: C:\\Users\\adil\\Desktop\\clesarmedia\n"
+"X-Loco-Target-Locale: fr_FR"
+
+#: ../breakingnews.php:20 ../category.php:20
+msgid "Nearly "
+msgstr ""
+
+#: ../breakingnews.php:20 ../category.php:20 ../category2-content-sidebar.php:21 .
+#: ./category3-content-sidebar.php:20 ../category3-content-sidebar.php:43 ..
+#: category4-content-sidebar.php:21 ../functions.php:129 ../page.php:13 ../page.
+#: php:22 ../single.php:17 ../single.php:26 ../template-page-content-sidebar-left.
+#: php:21 ../template-page-content-sidebar-left.php:30 ../template-page-content-
+#: sidebar.php:18 ../template-page-content-sidebar.php:27 ../template-page-
+#: fullwidth.php:17 ../template-page-fullwidth.php:26 ../video-content-sidebar.
+#: php:30
+msgid " ago"
+msgstr ""
+
+#: ../comments.php:27
+#, php-format
+msgctxt "comments title"
+msgid "Comment : One"
+msgid_plural "Comments : %1$s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../comments.php:36 ../comments.php:54
+msgid "Comment navigation"
+msgstr ""
+
+#: ../footer.php:6
+msgid "http://www.eightpixeldesign.com/"
+msgstr ""
+
+#: ../footer.php:6
+msgid "ClesarMedia WordPress Theme by EightPixelDesign"
+msgstr ""
+
+#: ../functions.php:12
+msgid "top-navigation"
+msgstr ""
+
+#: ../functions.php:12
+msgid "Menu principal (header)"
+msgstr ""
+
+#: ../functions.php:61
+msgid "&mdash; Select &mdash;"
+msgstr ""
+
+#: ../functions.php:88
+msgid "Continue Reading"
+msgstr ""
+
+#: ../functions.php:151
+msgid "sidebar"
+msgstr ""
+
+#: ../functions.php:159
+msgid "Footer Widgets Left"
+msgstr ""
+
+#: ../functions.php:167
+msgid "Footer Widgets Center"
+msgstr ""
+
+#: ../functions.php:175
+msgid "Footer Widgets Right"
+msgstr ""
+
+#: ../functions.php:217
+msgid "http://www.mhthemes.com/support/documentation-clesarmedia/"
+msgstr ""
+
+#: ../functions.php:217
+msgid "http://www.eightpixeldesign.com/wordpress-themes/"
+msgstr ""
+
+#: ../page.php:17 ../page.php:26 ../single.php:21 ../single.php:30 ../template-
+#: page-content-sidebar-left.php:25 ../template-page-content-sidebar-left.php:34 .
+#: ./template-page-content-sidebar.php:22 ../template-page-content-sidebar.php:31
+#: ../template-page-fullwidth.php:21 ../template-page-fullwidth.php:30
+msgid "no Responses"
+msgstr ""
+
+#: ../page.php:17 ../page.php:26 ../single.php:21 ../single.php:30 ../template-
+#: page-content-sidebar-left.php:25 ../template-page-content-sidebar-left.php:34 .
+#: ./template-page-content-sidebar.php:22 ../template-page-content-sidebar.php:31
+#: ../template-page-fullwidth.php:21 ../template-page-fullwidth.php:30
+msgid "1 Responses"
+msgstr ""
+
+#: ../page.php:17 ../page.php:26 ../single.php:21 ../single.php:30 ../template-
+#: page-content-sidebar-left.php:25 ../template-page-content-sidebar-left.php:34 .
+#: ./template-page-content-sidebar.php:22 ../template-page-content-sidebar.php:31
+#: ../template-page-fullwidth.php:21 ../template-page-fullwidth.php:30
+msgid "% Responses"
+msgstr ""
+
+#: ../posts-similar.php:2
+msgid "YOU MIGHT ALSO LIKE "
+msgstr ""
+
+#: ../single.php:84
+msgid "Sorry, no article corresponds in Your criteria."
+msgstr ""
+
+#. Name of the template
+msgid "Statistiques"
+msgstr ""
+
+#: ../stats.php:17
+msgid "Total Users : "
+msgstr ""
+
+#: ../stats.php:20
+msgid " are "
+msgstr ""
+
+#: ../stats.php:20
+msgid "s"
+msgstr ""
+
+#: ../stats.php:20
+msgid "."
+msgstr ""
+
+#: ../tag.php:4
+msgid "Tags"
+msgstr ""
+
+#. Name of the template
+msgid "sidebar left"
+msgstr ""
+
+#. Name of the template
+msgid "sidebar right"
+msgstr ""
+
+#. Name of the template
+msgid "Full Width"
+msgstr ""
+
+#: ../inc/customizer.php:7
+msgid "Home Settings"
+msgstr ""
+
+#: ../inc/customizer.php:8
+msgid "This is the home settings for homepage."
+msgstr ""
+
+#: ../inc/customizer.php:14
+msgid "Popular Posts title"
+msgstr ""
+
+#: ../inc/customizer.php:16
+msgid "number of posts Popular posts"
+msgstr ""
+
+#: ../inc/customizer.php:19
+msgid "Latest Video title"
+msgstr ""
+
+#: ../inc/customizer.php:21
+msgid "number of posts Latest Video"
+msgstr ""
+
+#: ../inc/customizer.php:40
+msgid "Category N1 title"
+msgstr ""
+
+#: ../inc/customizer.php:42
+msgid "number of posts category 1"
+msgstr ""
+
+#: ../inc/customizer.php:58
+msgid "Category N2 title"
+msgstr ""
+
+#: ../inc/customizer.php:60
+msgid "number of posts category 2"
+msgstr ""
+
+#: ../inc/customizer.php:76
+msgid "Category N3 title"
+msgstr ""
+
+#: ../inc/customizer.php:78
+msgid "number of posts category 3"
+msgstr ""
+
+#: ../inc/customizer.php:94
+msgid "Category N4 title"
+msgstr ""
+
+#: ../inc/customizer.php:96
+msgid "number of posts category 4"
+msgstr ""
+
+#: ../inc/customizer.php:105
+msgid "This is the Social settings for all pages ( header and footer )."
+msgstr ""
+
+#: ../inc/customizer.php:111
+msgid "Rss Url"
+msgstr ""
+
+#: ../inc/customizer.php:113
+msgid "facebook Url"
+msgstr ""
+
+#: ../inc/customizer.php:115
+msgid "google plus Url"
+msgstr ""
+
+#: ../inc/customizer.php:117
+msgid "vk Url"
+msgstr ""
+
+#: ../inc/customizer.php:119
+msgid "twitter Url"
+msgstr ""
+
+#: ../inc/customizer.php:121
+msgid "instagram Url"
+msgstr ""
+
+#: ../inc/customizer.php:123
+msgid "behance Url"
+msgstr ""
+
+#: ../inc/customizer.php:125
+msgid "youtube Url"
+msgstr ""
+
+#: ../inc/customizer.php:127
+msgid "dribbble Url"
+msgstr ""
+
+#: ../inc/customizer.php:129
+msgid "pinterest Url"
+msgstr ""
+
+#: ../inc/customizer.php:134
+msgid "Change Footer Text"
+msgstr ""
+
+#. Name of the theme
+msgid "ClesarMedia"
+msgstr ""
+
+#. Theme URI of the theme
+msgid "http://www.eightpixeldesign.com/clesarmedia-pro/"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"ClesarMedia is a fully responsive and free magazine / blog WordPress theme "
+"with a clean and modern design. This free WordPress theme is especially "
+"suitable for fancy online magazines, dynamic news websites, vivid blogs and "
+"other editorial websites with topics like lifestyle, food, travel, beauty, "
+"fashion, sports or any other content genre."
+msgstr ""
+
+#. Author of the theme
+msgid "Pixel Design"
+msgstr ""
+
+#: ../404.php:10
+msgid ""
+"Sorry, the page you asked for couldn't be found.	Please, try to use the "
+"search form below."
+msgstr ""
+"Désolé, la page que vous avez demandée n'a pas pue être trouver. S'il vous "
+"plaît, essayez d'utiliser le formulaire de recherche ci-dessous."
+
+#: ../404.php:14 ../search.php:35
+msgid "Here's a little map that might help you get back on track :"
+msgstr "Voici une petite carte qui pourrait vous aider à revenir sur la piste :"
+
+#: ../404.php:16 ../search.php:37
+msgid "Archives"
+msgstr "Archives"
+
+#: ../404.php:17 ../search.php:38
+msgid "Pages"
+msgstr "Pages"
+
+#: ../category.php:9
+msgid "Category "
+msgstr "catégorie"
+
+#: ../comments.php:39 ../comments.php:57
+msgid "Older Comments"
+msgstr "Ancien Commentaires"
+
+#: ../comments.php:40 ../comments.php:58
+msgid "Newer Comments"
+msgstr "Nouveaux Commentaires"
+
+#: ../comments.php:66
+msgid "Name"
+msgstr "Nom"
+
+#: ../comments.php:67
+msgid "Email"
+msgstr "adresse de messagerie"
+
+#: ../functions.php:116
+msgid "<i class=\"reply-singlecomment\"></i>Reply"
+msgstr "<i class=\"reply-singlecomment\"></i>Repondre"
+
+#: ../functions.php:117
+msgid "Log in to reply."
+msgstr "connectez vous pour repondre"
+
+#: ../functions.php:126
+msgid "Your comment is awaiting moderation."
+msgstr "votre commentaire est en cours de modération"
+
+#: ../search.php:31
+msgid ""
+"Sorry, the page you asked for couldn't be found.  Please, try to use the "
+"search form below."
+msgstr ""
+"Désolé, la page que vous avez demandée n'a pas pue être trouver. S'il vous "
+"plaît, essayez d'utiliser le formulaire de recherche ci-dessous."
+
+#: ../searchform.php:3
+msgid "Search..."
+msgstr "rechercher..."
+
+#: ../stats.php:8
+msgid "Number of Posts"
+msgstr "Nombre d'articles"
+
+#: ../stats.php:11
+msgid "Number of Pages"
+msgstr "Nombre de pages"
+
+#: ../stats.php:14
+msgid "Number of Responses"
+msgstr "Nombre de commentaires"
+
+#: ../stats.php:23
+msgid "Number Of tags : "
+msgstr "Nombres de tags"
