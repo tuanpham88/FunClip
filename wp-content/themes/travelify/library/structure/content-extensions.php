@@ -351,6 +351,7 @@ function travelify_theloop_for_single() {
 	    				<?php travelify_posted_on(); ?>
 	    				<?php if( has_category() ) { ?>
 	             		<span class="category"><?php the_category(', '); ?></span>
+						<span class="category"><?php echo getPostViews(get_the_ID()); ?></span>
 	             	<?php } ?>
 	    				<?php if ( comments_open() ) { ?>
 	             		<span class="comments"><?php comments_popup_link( __( 'No Comments', 'travelify' ), __( '1 Comment', 'travelify' ), __( '% Comments', 'travelify' ), '', __( 'Comments Off', 'travelify' ) ); ?></span>
@@ -420,6 +421,7 @@ if ( ! function_exists( 'travelify_theloop_for_search' ) ) :
 /**
  * Function to show the search results.
  */
+ /*
 function travelify_theloop_for_search() {
 	global $post;
 
@@ -450,6 +452,81 @@ function travelify_theloop_for_search() {
 
   			<?php do_action( 'travelify_after_post_content' ); ?>
 
+		</article>
+	</section>
+<?php
+			do_action( 'travelify_after_post' );
+
+		}
+	}
+	else {
+		?>
+		<h1 class="entry-title"><?php _e( 'No Posts Found.', 'travelify' ); ?></h1>
+      <?php
+   }
+}
+endif;
+*/
+function travelify_theloop_for_search() {
+	global $post;
+
+	if( have_posts() ) {
+		while( have_posts() ) {
+			the_post();
+
+			do_action( 'travelify_before_post' );
+?>
+	<section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<article>
+		<div class="medium-wrap">
+			<?php do_action( 'travelify_before_post_header' ); ?>
+			<header class="entry-header">
+    			<h2 class="entry-title">
+    				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute();?>"><?php the_title(); ?></a>
+    			</h2><!-- .entry-title -->
+  			</header>
+
+  			<?php do_action( 'travelify_after_post_header' ); ?>
+
+  			<?php do_action( 'travelify_before_post_content' ); ?>
+
+			<?php
+			if( has_post_thumbnail() ) {
+				$image = '';        			
+	     		$title_attribute = apply_filters( 'the_title', get_the_title( $post->ID ) );
+	     		$image .= '<figure class="post-featured-image">';
+	  			$image .= '<a href="' . get_permalink() . '" title="'.the_title( '', '', false ).'">';
+	  			$image .= get_the_post_thumbnail( $post->ID, 'featured-medium', array( 'title' => esc_attr( $title_attribute ), 'alt' => esc_attr( $title_attribute ) ) ).'</a>';
+	  			$image .= '</figure>';
+
+	  			echo $image;
+	  		}
+  			?>
+  			
+    		<?php the_excerpt(); ?>
+  			
+
+  			<?php do_action( 'travelify_after_post_content' ); ?>
+
+  			<?php do_action( 'travelify_before_post_meta' ); ?>
+		</div>
+  			<div class="entry-meta-bar clearfix">	        			
+    			<div class="entry-meta">
+	    				<span class="author"><a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php the_author(); ?></a></span>
+	    				<span class="date"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( get_the_time() ); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a></span>
+	    				<?php if( has_category() ) { ?>
+	             		<span class="category"><?php the_category(', '); ?></span>
+	             	<?php } ?> 
+	    				<?php if ( comments_open() ) { ?>
+	             		<span class="comments"><?php comments_popup_link( __( 'No Comments', 'travelify' ), __( '1 Comment', 'travelify' ), __( '% Comments', 'travelify' ), '', __( 'Comments Off', 'travelify' ) ); ?></span>
+	             	<?php } ?>		          				
+    			</div><!-- .entry-meta -->
+    			<?php
+    			echo '<a class="readmore" href="' . get_permalink() . '" title="'.the_title( '', '', false ).'">'.__( 'Xem thêm', 'travelify' ).'</a>';
+    			?>
+    		</div>
+
+    		<?php do_action( 'travelify_after_post_meta' ); ?>
 		</article>
 	</section>
 <?php
@@ -559,7 +636,7 @@ function travelify_theloop_for_template_blog_image_large() {
 			if ( $wp_query->max_num_pages > 1 ) {
 			?>
 				<ul class="default-wp-page clearfix">
-					<li class="previous"><?php next_posts_link( __( '&laquo; Cũ hơn', 'travelify' ), $wp_query->max_num_pages ); ?></li>
+					<li class="previous"><?php next_posts_link( __( '&laquo; Xem thêm', 'travelify' ), $wp_query->max_num_pages ); ?></li>
 					<li class="next"><?php previous_posts_link( __( 'Mới hơn &raquo;', 'travelify' ), $wp_query->max_num_pages ); ?></li>
 				</ul>
 				<?php
@@ -669,7 +746,7 @@ function travelify_theloop_for_template_blog_image_medium() {
 			if ( $wp_query->max_num_pages > 1 ) {
 			?>
 				<ul class="default-wp-page clearfix">
-					<li class="previous"><?php next_posts_link( __( '&laquo; Cũ hơn', 'travelify' ), $wp_query->max_num_pages ); ?></li>
+					<li class="previous"><?php next_posts_link( __( '&laquo; Xem thêm', 'travelify' ), $wp_query->max_num_pages ); ?></li>
 					<li class="next"><?php previous_posts_link( __( 'Mới hơn &raquo;', 'travelify' ), $wp_query->max_num_pages ); ?></li>
 				</ul>
 				<?php
@@ -780,7 +857,7 @@ function travelify_theloop_for_template_blog_full_content() {
 			if ( $wp_query->max_num_pages > 1 ) {
 			?>
 				<ul class="default-wp-page clearfix">
-					<li class="previous"><?php next_posts_link( __( '&laquo; Cũ hơn', 'travelify' ), $wp_query->max_num_pages ); ?></li>
+					<li class="previous"><?php next_posts_link( __( '&laquo; Xem thêm', 'travelify' ), $wp_query->max_num_pages ); ?></li>
 					<li class="next"><?php previous_posts_link( __( 'Mới hơn &raquo;', 'travelify' ), $wp_query->max_num_pages ); ?></li>
 				</ul>
 				<?php
@@ -816,7 +893,7 @@ function travelify_next_previous() {
 			if ( $wp_query->max_num_pages > 1 ) :
 			?>
 			<ul class="default-wp-page clearfix">
-				<li class="previous"><?php next_posts_link( __( '&laquo; Cũ hơn', 'travelify' ) ); ?></li>
+				<li class="previous"><?php next_posts_link( __( '&laquo; Xem thêm', 'travelify' ) ); ?></li>
 				<li class="next"><?php previous_posts_link( __( 'Mới hơn &raquo;', 'travelify' ) ); ?></li>
 			</ul>
 			<?php
@@ -836,7 +913,7 @@ function travelify_next_previous_post_link() {
 		if( is_attachment() ) {
 		?>
 			<ul class="default-wp-page clearfix">
-				<li class="previous"><?php previous_image_link( false, __( '&laquo; Cũ hơn', 'travelify' ) ); ?></li>
+				<li class="previous"><?php previous_image_link( false, __( '&laquo; Xem thêm', 'travelify' ) ); ?></li>
 				<li class="next"><?php next_image_link( false, __( 'Mới hơn &raquo;', 'travelify' ) ); ?></li>
 			</ul>
 		<?php

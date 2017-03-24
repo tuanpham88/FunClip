@@ -34,4 +34,8 @@
 	do_action( 'travelify_after_main_container' );
 ?>
 
+<?php
+          setPostViews(get_the_ID());
+?>
+
 <?php get_footer(); ?>
